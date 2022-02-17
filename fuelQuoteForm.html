@@ -5,33 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fuel Quote Form</title>
+    <link rel="stylesheet" href="fuelQuoteForm.css" />
   </head>
   <body>
-    <h1>Fuel Quote Form</h1>
+    <div id="formBox">
+      <h1 id="formHeader">Fuel Quote Form</h1>
+      <form id="fuelQuoteForm">
+        <p>
+          <label for="">Gallons Requested</label>
+          <input type="number" required id="gallons" />
+        </p>
+        <p>
+          <label for="">Delivery Address</label>
+          <input type="text" value="Address from profile" readonly />
+        </p>
+        <p>
+          <label for="">Delivery Date</label>
+          <input type="date" />
+        </p>
+        <p>
+          <label for="">Suggested Price / Gallon</label>
+          <input type="number" value="0" readonly id="price" />
+        </p>
+        <p>
+          <input id="calculateButton" type="submit" value="Calculate" />
+        </p>
+        <p>
+          <label for="">Total Amount Due</label>
+          <input type="number" id="total" readonly />
+        </p>
+      </form>
+    </div>
   </body>
-  <form>
-    <div>
-      <label for="">Gallons Requested</label>
-      <input type="number" required id="gallons" />
-    </div>
-    <div>
-      <label for="">Delivery Address</label>
-      <input type="text" value="Address from profile" readonly />
-    </div>
-    <div>
-      <label for="">Delivery Date</label>
-      <input type="date" />
-    </div>
-    <div>
-      <label for="">Suggested Price / Gallon</label>
-      <input type="number" value="0" readonly id="price" />
-    </div>
-    <div>
-      <input type="submit" value="Calculate" />
-    </div>
-    <div>
-      <label for="">Total Amount Due</label>
-      <input type="number" id="total" readonly />
-    </div>
-  </form>
 </html>
