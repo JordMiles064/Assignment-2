@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Management</title>
     <link rel="stylesheet" href="profileManagement.css" />
+    <script defer src="profileManagement.js"></script>
   </head>
   <body>
-    <a href=mainmenu.html style="text-decoration: none; color:black; font-size: 12px; ">Back to Main Menu</a>
     <div id="formBox">
       <h1 id="formHeader">Profile Management</h1>
-      <form id="profileManagementForm">
+      <div id="error"></div>
+      <form id="profileManagementForm" action="/" method="GET">
         <p>
           <label for="">Full Name</label>
-          <input type="text" maxlength="50" required />
+          <input id="name" type="text" maxlength="50" required />
         </p>
         <p>
           <label for="">Address 1</label>
-          <input type="text" maxlength="100" required />
+          <input id="address1" type="text" maxlength="100" required />
         </p>
         <p>
           <label for="">Address 2</label>
-          <input type="text" maxlength="100" />
+          <input id="address2" type="text" maxlength="100" />
         </p>
         <p>
           <label for="">City</label>
-          <input type="text" maxlength="100" required />
+          <input id="city" type="text" maxlength="100" required />
         </p>
         <p>
           <label for="">State</label>
@@ -87,9 +88,9 @@
         </p>
         <p>
           <label for="">Zipcode</label>
-          <input type="number" maxlength="9" minlength="5" required />
+          <input id="zip" type="number" maxlength="9" minlength="5" required />
         </p>
-        <input id="submitButton" type="submit" />
+        <button id="submit" type="submit">Submit</button>
       </form>
     </div>
   </body>
